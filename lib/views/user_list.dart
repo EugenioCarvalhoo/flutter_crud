@@ -11,7 +11,7 @@ class UserList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final UserProvider users = Provider.of(context);
-
+    
     return Scaffold(
       appBar: AppBar(
         title: const Text('Lista de Usuários'),
