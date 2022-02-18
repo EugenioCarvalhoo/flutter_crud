@@ -1,5 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_crud/components/user_title.dart';
+import "package:flutter/material.dart";
 import 'package:flutter_crud/provider/users_provider.dart';
 import 'package:flutter_crud/routes/app_routes.dart';
 import 'package:flutter_crud/views/user_form.dart';
@@ -25,7 +24,7 @@ class MyApp extends StatelessWidget {
         ),
         home: const UserList(),
         routes: {
-          AppRoutes.USER_FORM: (_) => UserForm(),
+          AppRoutes.USER_FORM: (_) => const UserForm(),
         },
       ),
     );

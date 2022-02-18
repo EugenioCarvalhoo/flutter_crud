@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_crud/models/user.dart';
 import 'package:flutter_crud/provider/users_provider.dart';
-import 'package:flutter_crud/views/user_list.dart';
 import 'package:provider/provider.dart';
 
 class UserForm extends StatefulWidget {
-  UserForm({Key? key}) : super(key: key);
+  const UserForm({Key? key}) : super(key: key);
 
   @override
   State<UserForm> createState() => _UserFormState();
@@ -50,8 +49,8 @@ class _UserFormState extends State<UserForm> {
                     email: _formData['email'].toString(),
                     avatarUrl: _formData['avatarUrl'].toString(),
                   ),
-                );
-                Navigator.of(context).pop();
+                    );
+                    Navigator.of(context).pop();
               }
             },
             icon: const Icon(Icons.save),
